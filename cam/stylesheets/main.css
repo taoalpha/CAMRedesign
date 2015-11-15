@@ -119,23 +119,52 @@ header ul.social li.facebook {
 /**** fix width for content ****/
 /* line 54, ../sass/main.scss */
 nav ul, footer .links, .mainContent {
-  width: 1440px;
+  /*width: 1440px;*/
   margin: auto;
+}
+
+/* line 54 */
+.searchBox {
+  display: inline-block;
+  width: 20%;
+  height: 35px;
+  background-color: #a2a2a2;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Style the place holder on different broswer*/
+::-webkit-input-placeholder {
+   color: #787878;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #787878;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #787878;  
+}
+
+:-ms-input-placeholder {  
+   color: #787878;  
 }
 
 /* line 59, ../sass/main.scss */
 nav {
-  background-color: #ededed;
+  background-color: #222222;
 }
 /* line 61, ../sass/main.scss */
 nav ul {
   line-height: 100px;
   height: 100px;
+  margin-top: 10px;
 }
 /* line 65, ../sass/main.scss */
 nav li {
   float: left;
   height: 100px;
+  margin-left: 5%;
   padding: 0 35px;
   cursor: pointer;
 }
@@ -144,7 +173,7 @@ nav li a {
   text-decoration: none;
   font-weight: 700;
   font-size: 1.2rem;
-  color: #000;
+  color: #ffffff;
 }
 /* line 76, ../sass/main.scss */
 nav li:hover {
@@ -168,12 +197,12 @@ nav li.search:hover {
 nav li.search:after {
   content: " ";
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  /*width: 40px;
+  height: 40px;*/
   position: relative;
-  top: 15px;
-  left: -50px;
-  background-image: url(https://cdn0.iconfinder.com/data/icons/TWG_Retina_Icons/64/magnifier.png);
+  /*top: 15px;
+  left: -50px;*/
+  /*background-image: url(https://cdn0.iconfinder.com/data/icons/TWG_Retina_Icons/64/magnifier.png);*/
   background-size: cover;
 }
 
@@ -181,81 +210,47 @@ nav li.search:after {
 /* line 108, ../sass/main.scss */
 div.mainContent .leftContent {
   border-right: 2px solid #ccc;
-  width: 1200px;
+  width: 80%;
   float: left;
+  margin-left: 20px;
 }
 /* line 112, ../sass/main.scss */
 div.mainContent .leftContent .topStory {
-  height: 180px;
-  overflow: hidden;
+  background: -webkit-linear-gradient(#c0c0c0, white, #c0c0c0); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#c0c0c0, white, #c0c0c0); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#c0c0c0, white, #c0c0c0); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#c0c0c0, white, #c0c0c0); /* Standard syntax */
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 /* line 115, ../sass/main.scss */
 div.mainContent .leftContent .topStory .storyText {
   float: left;
   width: 50%;
-  height: 150px;
   background-color: #212121;
 }
-/* line 120, ../sass/main.scss */
-div.mainContent .leftContent .topStory .storyText .topMarker {
-  display: inline-block;
-  width: 200px;
-  float: left;
-  line-height: 150px;
-  font-size: 2rem;
-  height: 150px;
-  color: white;
-  text-align: center;
-  background-color: #9e0203;
-}
-/* line 131, ../sass/main.scss */
-div.mainContent .leftContent .topStory .storyText .topMarker_Triangle {
-  display: inline-block;
-  border-left: 50px solid #9e0203;
-  border-top: 75px solid transparent;
-  border-bottom: 75px solid transparent;
-}
-/* line 137, ../sass/main.scss */
-div.mainContent .leftContent .topStory .storyText .storyDesc {
-  color: white;
-  float: right;
-  width: 300px;
-  padding: 30px 30px 0 0;
-}
-/* line 142, ../sass/main.scss */
-div.mainContent .leftContent .topStory .storyText .storyDesc h4 {
-  font-size: 1rem;
-}
-/* line 145, ../sass/main.scss */
-div.mainContent .leftContent .topStory .storyText .storyDesc p {
-  margin-top: 10px;
-  font-size: 0.8rem;
-  color: #ddd;
-}
-/* line 152, ../sass/main.scss */
+
 div.mainContent .leftContent .topStory .storyImage {
-  width: 50%;
-  float: right;
-  height: 150px;
-  overflow: hidden;
-}
-/* line 157, ../sass/main.scss */
-div.mainContent .leftContent .topStory .storyImage img {
   width: 100%;
+  position: relative;
 }
-/* line 161, ../sass/main.scss */
-div.mainContent .leftContent .topStory .expand {
-  height: 30px;
-  background-color: #959595;
-  background-image: url(https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_expand_more_48px-32.png);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  cursor: pointer;
+
+div.mainContent .leftContent .topStory .storyImage img {
+
 }
-/* line 168, ../sass/main.scss */
-div.mainContent .leftContent .topStory .expand:hover {
-  background-color: #bebebe;
+
+div.mainContent .leftContent .topStory .storyImage .flyer {
+  position: absolute;
+  top: 20px;
+  left: 350px;
 }
+
+div.mainContent .leftContent .topStory .storyImage .flyertext {
+  margin-left: 15px;
+  margin-top: 15px;
+  color: white;
+}
+
 /* line 173, ../sass/main.scss */
 div.mainContent .leftContent .issuePicker {
   height: 160px;
@@ -401,7 +396,7 @@ div.mainContent .leftContent .articleContent ul.articles li a {
 /* line 299, ../sass/main.scss */
 div.mainContent .rightContent {
   width: 220px;
-  float: right;
+  float: left;
 }
 /* line 302, ../sass/main.scss */
 div.mainContent .rightContent .imageWheel {
