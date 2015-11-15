@@ -95,26 +95,7 @@ header {
 header img {
   padding-top: 30px;
 }
-/* line 35, ../sass/main.scss */
-header ul.social {
-  float: right;
-}
-/* line 37, ../sass/main.scss */
-header ul.social li {
-  width: 90px;
-  height: 90px;
-  color: transparent;
-  background-size: cover;
-  cursor: pointer;
-}
-/* line 43, ../sass/main.scss */
-header ul.social li.rss {
-  background-image: url("https://cdn2.iconfinder.com/data/icons/metro-ui-icon-set/128/RSS_Feed.png");
-}
-/* line 46, ../sass/main.scss */
-header ul.social li.facebook {
-  background-image: url("https://cdn2.iconfinder.com/data/icons/metro-ui-icon-set/128/User_No-Frame.png");
-}
+
 
 /**** fix width for content ****/
 /* line 54, ../sass/main.scss */
@@ -125,12 +106,20 @@ nav ul, footer .links, .mainContent {
 
 /* line 54 */
 .searchBox {
-  display: inline-block;
-  width: 20%;
   height: 35px;
   background-color: #a2a2a2;
   border-radius: 10px;
   border: 1px solid #ccc;
+  width: 180px;
+}
+
+
+form input {
+  display: inline-block;
+}
+
+form {
+  display: inline-block;
 }
 
 /* Style the place holder on different broswer*/
@@ -148,6 +137,16 @@ nav ul, footer .links, .mainContent {
 
 :-ms-input-placeholder {  
    color: #787878;  
+}
+
+header {
+  position: relative;
+}
+
+.banner {
+  position: absolute;
+  top: -20px;
+  right: 150px;
 }
 
 /* line 59, ../sass/main.scss */
@@ -179,16 +178,7 @@ nav li a {
 nav li:hover {
   background-color: #928e85;
 }
-/* line 80, ../sass/main.scss */
-nav input {
-  height: 50px;
-  width: 300px;
-  font-size: 1.2rem;
-  padding: 5px;
-  margin-left: 60px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-}
+
 /* line 89, ../sass/main.scss */
 nav li.search:hover {
   background-color: #ededed;
@@ -223,12 +213,6 @@ div.mainContent .leftContent .topStory {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 115, ../sass/main.scss */
-div.mainContent .leftContent .topStory .storyText {
-  float: left;
-  width: 50%;
-  background-color: #212121;
-}
 
 div.mainContent .leftContent .topStory .storyImage {
   width: 100%;
@@ -250,6 +234,7 @@ div.mainContent .leftContent .topStory .storyImage .flyertext {
   margin-top: 15px;
   color: white;
 }
+
 
 /* line 173, ../sass/main.scss */
 div.mainContent .leftContent .issuePicker {
