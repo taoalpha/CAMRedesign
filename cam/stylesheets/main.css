@@ -96,7 +96,6 @@ header img {
   padding-top: 30px;
 }
 
-
 /**** fix width for content ****/
 /* line 54, ../sass/main.scss */
 nav ul, footer .links, .mainContent {
@@ -196,6 +195,8 @@ nav li.search:after {
   background-size: cover;
 }
 
+
+
 /****** main content ******/
 /* line 108, ../sass/main.scss */
 div.mainContent .leftContent {
@@ -220,7 +221,7 @@ div.mainContent .leftContent .topStory .storyImage {
 }
 
 div.mainContent .leftContent .topStory .storyImage img {
-
+  display: inline-block;
 }
 
 div.mainContent .leftContent .topStory .storyImage .flyer {
@@ -235,6 +236,75 @@ div.mainContent .leftContent .topStory .storyImage .flyertext {
   color: white;
 }
 
+div.mainContent .leftContent .topStory .storyImage .storyText {
+  display: inline-block;
+}
+
+div.mainContent .leftContent .topStory .storyImage p {
+  display: inline-block;
+}
+
+div.mainContent .leftContent .topStory .storyImage img {
+  display: inline-block;
+}
+
+div.mainContent .leftContent .topStory .storyImage {
+  display: inline-block;
+}
+
+.text {
+  position: absolute;
+  top: 90px;
+  left: 400px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.feature {
+  position: relative;
+}
+
+.flyer2 {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+
+.word2 {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 2px;
+  width: 998px;
+  color: white;
+  display: block;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.caption p, .caption h1 {
+  margin: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.times {
+  margin-top: 50px;
+}
+
+.issueImages {
+  margin-bottom: 30px;
+}
 
 /* line 173, ../sass/main.scss */
 div.mainContent .leftContent .issuePicker {
@@ -244,88 +314,7 @@ div.mainContent .leftContent .issuePicker {
 div.mainContent .leftContent .issuePicker div#uipv_main_issueDate, div.mainContent .leftContent .issuePicker div#uipv_content_issueDate {
   width: 100% !important;
 }
-/* line 179, ../sass/main.scss */
-div.mainContent .leftContent .featureStory {
-  background-color: #928e85;
-  height: 450px;
-  position: relative;
-}
-/* line 183, ../sass/main.scss */
-div.mainContent .leftContent .featureStory .slideControl {
-  position: absolute;
-  width: 220px;
-  height: 30px;
-  bottom: 10px;
-  left: 620px;
-}
-/* line 189, ../sass/main.scss */
-div.mainContent .leftContent .featureStory .slideControl li {
-  background-color: rgba(255, 255, 255, 0.6);
-  cursor: pointer;
-  border-radius: 10px;
-  width: 20px;
-  border: 1px solid transparent;
-  margin-left: 10px;
-  height: 20px;
-  float: left;
-}
-/* line 198, ../sass/main.scss */
-div.mainContent .leftContent .featureStory .slideControl li.active {
-  background-color: rgba(255, 255, 255, 0);
-  border: 1px solid white;
-}
-/* line 205, ../sass/main.scss */
-div.mainContent .leftContent .featureStory .storyImage {
-  float: left;
-  width: 310px;
-  height: 450px;
-  overflow: hidden;
-  border-right: 40px solid #e6592e;
-}
-/* line 212, ../sass/main.scss */
-div.mainContent .leftContent .featureStory .storyText {
-  float: right;
-  width: 850px;
-}
-/* line 215, ../sass/main.scss */
-div.mainContent .leftContent .featureStory .storyText .featureMarker {
-  width: 200px;
-  height: 50px;
-  position: relative;
-  top: 20px;
-  left: -30px;
-  text-align: center;
-  line-height: 50px;
-  color: white;
-  background-color: #9e0203;
-}
-/* line 226, ../sass/main.scss */
-div.mainContent .leftContent .featureStory .storyText .singleStory {
-  position: relative;
-  height: 340px;
-  overflow: hidden;
-  padding-top: 60px;
-}
-/* line 231, ../sass/main.scss */
-div.mainContent .leftContent .featureStory .storyText .singleStory h3 {
-  line-height: 80px;
-  display: block;
-  background-color: white;
-  border-top: 5px dashed #ededed;
-  border-bottom: 5px dashed #ededed;
-  outline: white solid 10px;
-  text-align: center;
-}
-/* line 240, ../sass/main.scss */
-div.mainContent .leftContent .featureStory .storyText .singleStory p {
-  padding: 20px;
-}
-/* line 243, ../sass/main.scss */
-div.mainContent .leftContent .featureStory .storyText .singleStory .readMore {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-}
+
 /* line 252, ../sass/main.scss */
 div.mainContent .leftContent .articleContent ul.tabs {
   height: 80px;
@@ -382,7 +371,13 @@ div.mainContent .leftContent .articleContent ul.articles li a {
 div.mainContent .rightContent {
   width: 220px;
   float: left;
+  margin-left: 10px;
 }
+
+#ads img{
+  height: 350px;
+}
+
 /* line 302, ../sass/main.scss */
 div.mainContent .rightContent .imageWheel {
   margin-top: 20px;
@@ -442,9 +437,11 @@ div.mainContent .rightContent .mostArticle {
   margin-top: 50px;
   width: 200px;
   height: 300px;
-  background-color: black;
+  background-color: white;
   border-radius: 10px;
+  border: 1px solid grey;
 }
+
 /* line 354, ../sass/main.scss */
 div.mainContent .rightContent .mostArticle ul.tabs li {
   cursor: pointer;
@@ -453,13 +450,14 @@ div.mainContent .rightContent .mostArticle ul.tabs li {
   font-size: 1rem;
   float: left;
   line-height: 30px;
-  color: white;
+  color: black;
   border-radius: 5px;
 }
 /* line 363, ../sass/main.scss */
 div.mainContent .rightContent .mostArticle ul.tabs li.active {
-  background-color: #9e0203;
+  background-color: grey;
 }
+
 /* line 368, ../sass/main.scss */
 div.mainContent .rightContent .mostArticle ul.mostRead, div.mainContent .rightContent .mostArticle ul.mostShared {
   height: 270px;
@@ -467,7 +465,7 @@ div.mainContent .rightContent .mostArticle ul.mostRead, div.mainContent .rightCo
 }
 /* line 371, ../sass/main.scss */
 div.mainContent .rightContent .mostArticle ul.mostRead a, div.mainContent .rightContent .mostArticle ul.mostShared a {
-  color: white;
+  color: black;
   font-size: 0.8rem;
 }
 /* line 375, ../sass/main.scss */
@@ -504,7 +502,7 @@ div.mainContent .rightContent .getInvolved {
   margin-top: 50px;
   width: 200px;
   height: 120px;
-  background-color: black;
+  background-color: white;
   border-radius: 10px;
 }
 /* line 406, ../sass/main.scss */
@@ -529,6 +527,10 @@ div.mainContent .rightContent .getInvolved li:before {
 div.mainContent .rightContent .getInvolved a {
   color: white;
   font-size: 0.8rem;
+}
+
+.articleContent {
+  border: 1px solid #bdbdbd;
 }
 
 /* line 429, ../sass/main.scss */
@@ -574,4 +576,61 @@ footer .notes ul {
 footer .notes li {
   float: left;
   margin-right: 10px;
+}
+
+.diy-slideshow{
+position: relative;
+display: block;
+overflow: hidden;
+}
+figure{
+position: absolute;
+opacity: 0;
+transition: 1s opacity;
+}
+figcaption{
+position: absolute;
+font-family: sans-serif;
+font-size: .8em;
+bottom: .75em;
+right: .35em;
+padding: .25em;
+color: #fff;
+background: rgba(0,0,0, .25);
+border-radius: 2px;
+}
+figcaption a{
+color: #fff;
+}
+figure.show{
+opacity: 1;
+position: static;
+transition: 1s opacity;
+}
+.next, .prev{
+color: #fff;
+position: absolute;
+background: rgba(0,0,0, .6);
+top: 50%;
+z-index: 1;
+font-size: 2em;
+margin-top: -.75em;
+opacity: .3;
+user-select: none;
+}
+.next:hover, .prev:hover{
+cursor: pointer;
+opacity: 1;
+}
+.next{
+right: 0;
+padding: 10px 5px 15px 10px;
+border-top-left-radius: 3px;
+border-bottom-left-radius: 3px;
+}
+.prev{
+left: 0;
+padding: 10px 10px 15px 5px;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
 }
