@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cornell Alumini Magazine</title>
+<link href="css/font.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.story-slider').bxSlider({
+			pager:false,
+			auto:true,
+		});
+		$( "#tabs" ).tabs();
+		$( "#tabs2" ).tabs();
+		$("#menu").click(function(e) {
+            $(".left-nav").slideToggle();
+        });
+	});
+</script>
+</head>
+<body>
+<div class="header">
+  <div class="container">
+    <div class="logo"> <a href="#"><img src="images/logo.png" alt="" /></a> </div>
+    <div class="donate">
+      <div class="subscrib-icon"> <a href="#">Subscribe</a> </div>
+      <div class="donate-icon"> <a href="#">Donate</a> </div>
+    </div>
+    <button id="menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="clr"></div>
+  <div class="nav">
+    <div class="container">
+      <div class="left-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Current Issue</a></li>
+          <li><a href="#"> Gallery</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="search-bar">
+        <input type="text" placeholder="Search" />
+      </div>
+    </div>
+  </div>
+</div>
+<div id="content">
+	<div class="container">
+        <div class="left-panel">
+            <div class="top-story">
+            	<div class="left">
+                	<img src="images/story.jpg" alt=""  />
+                </div>
+            	<div class="right">
+                	<span class="story-label">Top Story</span>
+                	<h3><span>Garrett Launches Meet-the-Cornellians</span></h3>
+                    <p>Newly inagurated President Elizabeth Garrett is 
+launching a tour that will take her to cities across 
+the U.S. and abroad over the next six months for 
+meet-and-greet events with Cornellians.</p>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="featured-story">
+            	<span class="featured-label">Featured Story</span>
+                <div class="story-slider">
+                	<div class="items">
+                    	<img src="images/slider.jpg" alt="" />
+                        <div class="slider-content">
+                        	<h3>Ups and Downs</h3>
+                            <p>Seventy-five years ago, the Big Red played one of the most famous contests in college 
+football history. The so-called fifth down game in which Cornell forfeited a key win against 
+Dartmouth</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-panels">
+            
+            <div id="tabs">
+  <ul class="tabs-head">
+    <li><a href="#tabs-1">Currents</a></li>
+    <li><a href="#tabs-2">Departments</a></li>
+    <li><a href="#tabs-3">Blogs</a></li>
+  </ul>
+  <div id="tabs-1" class="tabs-content">
+  	<div class="content-row">
+   	<div class="left">
+    	<img src="images/current-img1.jpg" alt=""  />
+    </div>
+    <div class="right">
+    	<div class="tab-content-des">
+        	<h4>Neque porro quisquam est qui </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit.Nam porttitor eros ac dictum vestibulum. Duis 
+pulvinar tempor euismod.Proin id dolor at nibh maxim
+us accumsan sed molestie nibh. Mauris bibendu dolor
+tellus, sit amet mollis nisi scelerisque ut. Nunc eget 
+ultricies leo.   </p>
+<div class="mate">
+<!-- <div class="fl"><i>November 10, 2015</i> <span class="comments"><img src="images/comment.jpg" alt=""  /><sub>2</sub></span></div> -->
+<div class="fl"><i style="color: blue">Leave a comment</i></div>
+
+<div class="fr"><a href="#">Continue reading >></a></div>
+
+</div>
+        </div>
+    </div>
+   	<div class="clr"></div>
+    </div>
+    <div class="content-row">
+   	<div class="left">
+    	<img src="images/current-img2.jpg" alt=""  />
+    </div>
+    <div class="right">
+    	<div class="tab-content-des">
+        	<h4>Neque porro quisquam est qui </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit.Nam porttitor eros ac dictum vestibulum. Duis 
+pulvinar tempor euismod.Proin id dolor at nibh maxim
+us accumsan sed molestie nibh. Mauris bibendu dolor
+tellus, sit amet mollis nisi scelerisque ut. Nunc eget 
+ultricies leo.   </p>
+<div class="mate">
+<div class="fl"><i>November 10, 2015</i> <span class="comments"><img src="images/comment.jpg" alt=""  /><sub>2</sub></span></div>
+<div class="fr"><a href="#">Continue reading >></a></div>
+
+</div>
+        </div>
+    </div>
+   	<div class="clr"></div>
+    </div>
+    <div class="content-row">
+   	<div class="left">
+    	<img src="images/current-img3.jpg" alt=""  />
+    </div>
+    <div class="right">
+    	<div class="tab-content-des">
+        	<h4>Neque porro quisquam est qui </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit.Nam porttitor eros ac dictum vestibulum. Duis 
+pulvinar tempor euismod.Proin id dolor at nibh maxim
+us accumsan sed molestie nibh. Mauris bibendu dolor
+tellus, sit amet mollis nisi scelerisque ut. Nunc eget 
+ultricies leo.   </p>
+<div class="mate">
+<div class="fl"><i>November 10, 2015</i> <span class="comments"><img src="images/comment.jpg" alt=""  /><sub>2</sub></span></div>
+<div class="fr"><a href="#">Continue reading >></a></div>
+
+</div>
+        </div>
+    </div>
+   	<div class="clr"></div>
+    </div>
+    <div class="content-row">
+   	<div class="left">
+    	<img src="images/current-img4.jpg" alt=""  />
+    </div>
+    <div class="right">
+    	<div class="tab-content-des">
+        	<h4>Neque porro quisquam est qui </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit.Nam porttitor eros ac dictum vestibulum. Duis 
+pulvinar tempor euismod.Proin id dolor at nibh maxim
+us accumsan sed molestie nibh. Mauris bibendu dolor
+tellus, sit amet mollis nisi scelerisque ut. Nunc eget 
+ultricies leo.   </p>
+<div class="mate">
+<div class="fl"><i>November 10, 2015</i> <span class="comments"><img src="images/comment.jpg" alt=""  /><sub>2</sub></span></div>
+<div class="fr"><a href="#">Continue reading >></a></div>
+
+</div>
+        </div>
+    </div>
+   	<div class="clr"></div>
+    </div>
+  </div>
+  <div id="tabs-2"  class="tabs-content">
+    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+  </div>
+  <div id="tabs-3"  class="tabs-content">
+    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+  </div>
+</div>
+            
+      </div>    
+        </div>
+        <div class="right-panel">
+			<div class="ads-panel">
+      	<img src="images/ad1.jpg" alt="" />
+      </div>
+
+      <div id="demo">
+
+    <div class="wrapper">
+        <div class="content">
+            <ul>
+                <a href="#"><li>January, 2015</li></a>
+                <a href="#"><li>March, 2015</li></a>
+                <a href="#"><li>May, 2015</li></a>
+                <a href="#"><li>July, 2015</li></a>
+            </ul>
+        </div>
+        <div class="parent">Select Issue</div>
+    </div>
+  </div>
+
+      <div class="ads-panel">
+      	<img src="images/cover.jpg" alt="" />
+      </div>
+      <button class="button">Download the PDF</button>
+      <div class="ads-panel">
+      	<img src="images/ad3.jpg" alt="" />
+      </div>
+      <div class="side-tabs">
+      <div id="tabs2">
+  <ul class="tabs-head">
+    <li><a href="#tabs-1">Most Read</a></li>
+    <li><a href="#tabs-2">Top Stories</a></li>
+  </ul>
+  
+  <div id="tabs-1"  class="tabs-content">
+    <ul>
+   		<li>Tour De Force</li>
+        <li>New Era for Collegetown</li>
+        <li>On the Double</li>
+        <li>They are what they eat</li>
+        <li>In living color</li> 
+        <li>From the Hill</li>
+    </ul>
+    
+  </div>
+  <div id="tabs-2"  class="tabs-content">
+    <ul>
+        <li>They are what they eat</li>
+        <li>In living color</li> 
+        <li>From the Hill</li>
+    </ul>
+    
+  </div>
+</div>
+
+<div class="socialshare">
+	<a href="#"><img src="images/fb.png" alt="" /></a>
+    <a href="#"><img src="images/google.png" alt="" /></a>
+    <a href="#"><img src="images/twitter.png" alt="" /></a>
+    <a href="#"><img src="images/pintrest.png" alt="" /></a>
+</div>
+
+					</div>
+        </div>
+        <div class="clr"></div>
+    </div>
+</div>
+
+
+<div class="footer">
+  <div class="container"> 
+  	<div class="footer-col">
+    	<h4>More CAM</h4>
+        <ul>
+        	<li><a href="#">Letter to the editor</a></li>
+            <li><a href="#">About CAM</a></li>
+            <li><a href="#">Cornell Authors</a></li>
+            <li><a href="#">Ivy League Magazine Network</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Archives</a></li>
+            <li><a href="#">Staff Directory</a></li>
+            <li><a href="#">Internships</a></li>
+            <li><a href="#">Advertise</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+    	<h4>Get Involved</h4>
+        <ul>
+        	<li><a href="#">Subscribe</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Submit Class Notes</a></li>
+            <li><a href="#">Pay Class Dues</a></li>
+            <li><a href="#">Update your address</a></li>
+            <li><a href="#">Join the Reader Panel </a></li>
+            <li><a href="#">Alumni Photo Gallery</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+    	<h4>More Cornell</h4>
+        <ul>
+        	<li><a href="#">Cornell Alumni Association</a></li>
+            <li><a href="#">Cornell University</a></li>
+            <li><a href="#">Reunion</a></li>
+            <li><a href="#">Homecoming</a></li>
+        </ul>
+    </div>
+    <div class="footer-col last">
+    	<h4>Advertising</h4>
+      <li><a href="#">Advertise</a></li>
+      <li><a href="#">Ivy League Magazine Network</a></li>
+
+    </div>
+    <div class="clr"></div>
+    
+  </div>
+  <div class="copyrights">
+    Cornell Alumni Magazine is owned and published by the Cornell Alumni Association<br />
+Editorially independent of Cornell University since 1899
+    </div>
+</div>
+</body>
+</html>
