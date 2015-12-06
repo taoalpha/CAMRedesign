@@ -6,11 +6,30 @@
 body {
 	font-size: 12px;
 	background: #ebebeb;
+	position: relative;
 }
 * {
 	margin: 0px;
 	padding: 0px;
 }
+
+#move {
+	position: absolute;
+	top: 349px;
+	left: 340px;
+	background: url(images/flag.png) left top no-repeat;
+	width: 265px;
+	height: 49px;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	line-height: 47px;
+	color: #fff;
+	font-size: 32px;
+	margin-bottom: 30px;
+	font-family: 'Avenir LT Std 65 Medium Oblique';
+}
+
 .fl {
 	float: left;
 }
@@ -54,7 +73,7 @@ button, input {
 	height: 300px;
 }
 .container {
-	max-width: 1195px;
+	max-width: 1206px;
 	margin: auto;
 }
 .logo {
@@ -149,7 +168,7 @@ button, input {
 	font-family: 'Avenir LT Std 65 Medium';
 }
 #content .container {
-	background: #fff;
+	background: #808080;
 }
 #content img {
 	max-width: 100%;
@@ -169,27 +188,29 @@ button, input {
 
 .left-panel {
 	width: 75%;
-	border-right: #000 solid 1px;
 	margin-left: -1px;
 	padding-top: 20px;
 	float: left;
 }
+
+.top-story img {
+	width: 100%;
+	height: 100%;
+	height: 326px;
+	width: 326px;
+}
+
 .top-story {
+	width: 326
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e4e4e4+0,bababa+100 */
-	background: #e4e4e4; /* Old browsers */
+	background: #bdbdbd; /* Old browsers */
 	background: -moz-linear-gradient(top, #e4e4e4 0%, #bababa 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #e4e4e4 0%, #bababa 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #e4e4e4 0%, #bababa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e4e4', endColorstr='#bababa', GradientType=0 ); /* IE6-9 */
 	margin-bottom: 20px;
 }
-.top-story:after {
-	background: url(../images/nav-bg.png) left bottom repeat-x;
-	content: "";
-	width: 100%;
-	display: block;
-	height: 10px;
-}
+
 .top-story .left {
 	float: left;
 	width: 36%;
@@ -215,10 +236,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e4e4', end
 	font-family: 'Avenir LT Std 65 Medium Oblique';
 }
 .top-story h3 {
-	background: #fff;
-	padding: 8px 0;
+	padding-top: 20px;
 	font-family: 'Avenir LT Std 65 Medium';
-	color: #000;
 	font-weight: normal;
 	font-size: 26px;
 	margin-bottom: 10px;
@@ -226,37 +245,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e4e4', end
 .top-story h3 span {
 	display: block;
 	padding: 5px 20px 4px;
-	border: #e4e4e4 dashed 2px;
-	border-left: none;
-	border-right: none;
+	margin-top: 70px;
+	color: #9b0000;
 }
+
 .top-story p {
+	color: black;
+	font-weight: normal;
 	padding: 20px;
 	font-family: 'Avenir LT Std 65 Medium';
-	font-size: 22px;
+	font-size: 20px;
 }
+
+
 .featured-story {
 	margin-bottom: 20px;
 	position: relative;
+	width: 900px;
+	margin-left: 10px;
 }
-.featured-story:before {
-	background: url(../images/hover-bg.png) left bottom repeat-x;
-	content: "";
-	width: 200px;
-	position: absolute;
-	left: 0;
-	top: 100%;
-	margin-top: -20px;
-	display: block;
-	height: 20px;
-}
-.featured-story:after {
-	background: url(../images/nav-bg.png) left bottom repeat-x;
-	content: "";
-	width: 100%;
-	display: block;
-	height: 20px;
-}
+
 .featured-story .items {
 	position: relative;
 }
@@ -278,7 +286,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e4e4', end
 	font-size: 20px;
 }
 .featured-story .featured-label {
-	background: url(../images/featured-label.png) left top no-repeat;
+	background: url(images/flag.png) left top no-repeat;
 	width: 265px;
 	height: 49px;
 	position: absolute;
@@ -295,7 +303,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e4e4', end
 	font-family: 'Avenir LT Std 65 Medium Oblique';
 }
 .tab-panels {
-	background: url(../images/tab-bg.png);
+	background-color: #808080;
 	padding: 20px;
 }
 .tabs-head {
@@ -419,7 +427,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e4e4', end
 	padding-top: 20px;
 	float: right;
 	margin-left: -1px;
-	border-left: #000 solid 1px;
 }
 .ads-panel {
 	text-align: center;
@@ -551,7 +558,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e4e4', end
         position: relative;
 
     }
-    
+    .simple-theme.wp-posts-carousel .wp-posts-carousel-container:hover {
+    	background-color: #808080;
+    }
+
     #demo .parent {
         text-align: center;
         margin: 5px;
@@ -636,3 +646,65 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e4e4', end
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
+
+
+
+.nav ul {
+  display: inline;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.nav ul li {
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.nav ul li:hover {
+
+}
+
+
+.wrapper p {
+	text-align: center;
+	margin-top: 6px;
+}
+
+.ad {
+	height: 326px;
+}
+
+.nav ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 100px;
+  left: 15%;
+  width: 350px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+.nav ul li ul li { 
+  background: #555; 
+  display: block; 
+  color: #fff;
+  width: 250px;
+  text-shadow: 0 -1px 0 #000;
+}
+.nav ul li ul li:hover { background: #666; }
+.nav ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
